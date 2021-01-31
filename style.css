@@ -1,0 +1,220 @@
+/* Police */ 
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+/* ./src/tailwind.css */
+@tailwind base;
+@tailwind components;
+
+
+.coco-card {
+  height: 465px;
+  @apply p-6 mb-12 md:w-80 md:p-10 md:mx-6 xl:w-72 uppercase cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+}
+
+
+@tailwind utilities;
+
+
+* {
+    font-family: 'marvel';
+}
+h2 {
+    font-family: 'Mouse Memoirs';
+}
+
+.coco-placement {
+    padding-top: 52px;
+}
+.coco-slogans-pc {
+    font-family: system-ui;
+}
+
+/* des ti-rets pour les listes */
+li:before {
+    content: '- ';
+ }
+ nav li:before {
+    content: ' ';
+ }
+
+ /* tailles de cards 
+.coco-h-card {
+    height: 465px;
+}*/
+ 
+/* illustration coco sur l'ordi */ 
+.coco-img-projet {
+  width: 30rem; ;
+}
+.coco-img-ordi {
+  width: 51rem; ;
+}
+
+/* background illustration */ 
+.coco-fond-plante {
+    background-image: url("../img/pc/fond.svg");
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position-x: center;
+}
+.coco-fond-plante2 {
+    background-image: url("../img/pc/fond2.svg");
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position-x: center;
+}
+ 
+/* Animation */
+.line-1{
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+    animation: typewriter 2s steps(44) 1s 1 normal both,
+               blinkTextCursor 300ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+  
+  
+  
+
+/* clip path */ 
+.coco-bloc-prestations:before {
+    content:'';
+    position:absolute;
+    background-color: white;
+    display: block;
+    width:100%;
+    height:180px;
+    top: -105px;
+    clip-path: ellipse(60% 38% at 50% 46%);
+  }
+  .coco-bloc-prestations:after {
+    content:'';
+    position:absolute;
+    background-color: white;
+    display: block;
+    width:100%;
+    height:180px;
+    bottom: -105px;
+    clip-path: ellipse(60% 38% at 50% 46%);
+  }
+  /* XL */ 
+    @media only screen and (min-width : 1023px) {
+        .coco-bloc-prestations:before {
+            content:'';
+            position:absolute;
+            background-color: white;
+            display: block;
+            width:100%;
+            height:170px;
+            top: -105px;
+            clip-path: ellipse(58% 80% at 50% 20%);
+          }
+          .coco-bloc-prestations:after {
+            content:'';
+            position:absolute;
+            background-color: white;
+            display: block;
+            width:100%;
+            height:180px;
+            bottom: -105px;
+            clip-path: ellipse(59% 83% at 50% 85%);
+          }
+    }
+  
+
+
+/* menu smartphone tablette */ 
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#3BB4CE;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham5 .top {
+    stroke-dasharray: 40 82;
+  }
+  .ham5 .bottom {
+    stroke-dasharray: 40 82;
+  }
+  .ham5.active .top {
+    stroke-dasharray: 14 82;
+    stroke-dashoffset: -72px;
+  }
+  .ham5.active .bottom {
+    stroke-dasharray: 14 82;
+    stroke-dashoffset: -72px;
+  }
+  #coco-menu {
+      display: none;
+      background-image:url('../img/pc/fond3.svg');
+      background-position: center;
+      background-size: cover;
+  }
+  .coco-overflow {
+      overflow: hidden;
+  }
+
+
+  .coco-header {
+    background-color: #3BB4CE;
+  }
+
+
+
+
+/* les couleurs des textes */
+.coco-txt-color {
+    color : #3BB4CE;
+}
+
+/* les couleurs prestations et boutons */
+.coco-color-identitevisuelle {
+    background-color: #F8B47E;
+}
+.coco-color-print {
+    background-color: #BBE0DD;
+}
+.coco-color-web {
+    background-color: #EF8963;
+}
+.coco-color-video {
+    background-color: #FFC907;
+}
+.coco-color-digitale {
+    background-color: #206771;
+}
+.coco-color-important {
+    background-color: #E9464E;
+}
+.coco-color-footer {
+    background-color: #0FB4B7;
+}
+ 
