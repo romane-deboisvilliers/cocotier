@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="/dist/tailwind.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Cocotier - Agence digitale à La Réunion</title>
+</head>
+<body>
+    <nav class="h-16">
+        <img src="img/logo/logo1.svg" class="w-52 absolute left-4 top-1 md:left-10 lg:invisible" alt="logo Cocotier">
+        <svg class="ham hamRotate180 ham5 absolute z-10 right-2 lg:invisible" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+            <path
+                class="line top"
+                d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+            <path
+                class="line middle"
+                d="m 70,50 h -40" />
+            <path
+                class="line bottom"
+                d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+        </svg>
+          <div class="bg-white w-full h-full fixed m-auto lg:invisible" id="coco-menu">    
+              <ul class="w-4/6 text-black uppercase text-2xl mt-32 m-auto md:text-4xl">
+                  <li class="coco-lien-menu py-5 md:py-10 "><a href="index.html">Accueil</a></li>
+                  <li class="coco-lien-menu py-5 md:py-10 ">Nos prestations</li>
+                  <li class="coco-lien-menu py-5 md:py-10 ">Nos packs</li>
+                  <li class="coco-lien-menu py-5 md:py-10 ">La méthode COCO</li>
+              </ul>
+          </div>
+          <div class="w-full flex pt-4 invisible lg:visible">    
+            <img src="img/logo/logo1.svg" class="w-56 absolute left-4 top-1 md:left-20 lg:visible" alt="logo Cocotier">
+            <ul class="w-6/6 flex absolute right-0 text-black uppercase text-xl">
+                <li class="pl-14 coco-lien-menu"><a href="index.html">Accueil</a></li>
+                <li class="pl-14 coco-lien-menu">Nos prestations</li>
+                <li class="pl-14 coco-lien-menu">Nos packs</li>
+                <li class="pl-14 pr-16 coco-lien-menu">La méthode COCO</li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="bg-coco w-full h-72">
+        <div class="pt-40 w-11/12 sm:w-8/12 m-auto text-white text-4xl lg:text-5xl xl:text-6xl text-center">
+            <p class="coco-slogans">#léchevitrine</p>
+        </div>
+    </header>
+
+    <!-- contenu page -->
+    <div class="w-10/12 lg:w-7/12 py-10 m-auto flex flex-col items-center">
+        <div>
+            <div class="py-10">
+                <img src="img/realisation/1/1.jpg" alt="visuel tshirt personnalisé">
+            </div>
+            <div class="py-10">
+                <img src="img/realisation/1/2.jpg" alt="visuel tshirt personnalisé">
+            </div>
+            <div class="py-10">
+                <img src="img/realisation/1/3.jpg" alt="visuel tshirt personnalisé">
+            </div>
+        </div>
+        <div class="w-full flex flex-col items-center">
+            <p class="text-coco pb-10 text-lg lg:text-xl">Visuelle t-shirt personnalisé pour l'arrivé de bébé.</p>
+            <a href="index.html">
+                <p class="cursor-pointer pt-4 text-2xl text-white w-64 h-16 uppercase bg-gray-400 text-center transition duration-500 ease-in-out hover:bg-coco">Retour</p>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- contenu page fin -->
+
+    <footer class="text-white bg-coco">
+        <div class="w-10/12 pt-6 flex flex-wrap m-auto">
+            <p class="w-9/12 text-2xl text-center m-auto">COCOTIER se tient disponible pour vous ! </p>
+            <p class="w-10/12 text-2xl pt-5 m-auto text-center xl:pt-0">N’hésitez pas à nous contacter pour un devis gratuit.</p>
+            <div class="w-8/12 pt-16 m-auto flex flex-col md:w-4/12 xl:pt-1">
+                <h3 class="text-3xl uppercase">Nous suivre</h3>
+                <div class="flex space-x-4 pt-6"> 
+                    <img src="img/icones/linkedin.svg" class="w-11 cursor-pointer" alt="LinkedIn">
+                    <img src="img/icones/instagram.svg" class="w-11 cursor-pointer" alt="Instagram">
+                    <img src="img/icones/facebook.svg" class="w-11 cursor-pointer" alt="Facebook">
+                </div>
+            </div>
+            <div class="w-8/12 pt-10 m-auto md:w-4/12 xl:pt-1">
+                <h3 class="text-3xl uppercase pt-16">Nous contacter</h3>
+                <p class="text-2xl pt-6">0692 36 66 93</p>
+                <p class="text-2xl cursor-pointer transition duration-500 ease-in-out hover:text-blue-600">cocotier@gmail.com</p>
+                <p class="text-2xl">La Réunion</p>
+            </div>
+            <div class="pt-10 m-auto xl:pt-1">
+                <img src="img/logo/cocotierlogo.svg" class="w-64" alt="cocotier logo">
+            </div>
+            <div class="md:w-full">
+                <p class="text-4xl uppercase text-center pt-16">#protégez-vous</p>
+                <p class="w-9/12 text-xl m-auto text-center md:w-12/12">Île de La Réunion - Site réalisé par COCOTIER 2020 - <a href="" class="cursor-pointer">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $( "#coco-burger-menu" ).click(function() {
+          $( "#coco-menu" ).toggle();
+          $( "body" ).toggleClass('coco-overflow');
+        });
+    </script>
+</body>
+</html>
