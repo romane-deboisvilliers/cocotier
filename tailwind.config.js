@@ -719,6 +719,7 @@ module.exports = {
       min: 'min-content',
       max: 'max-content',
       cocoillustration: '445px',
+      cocoillustrationmethodecoco: '427px',
     }),
     zIndex: {
       auto: 'auto',
