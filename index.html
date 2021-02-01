@@ -11,7 +11,7 @@
 <body>
 
   <nav class="h-16">
-        <img src="img/logo/logo1.svg" class="w-40 absolute left-4 top-1 md:left-10 lg:invisible" alt="logo Cocotier">
+        <img src="img/logo/logo1.svg" class="w-52 absolute left-4 top-1 md:left-10 lg:invisible" alt="logo Cocotier">
         <svg class="ham hamRotate180 ham5 absolute z-10 right-2 lg:invisible" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
             <path
                 class="line top"
@@ -25,39 +25,39 @@
         </svg>
           <div class="bg-white w-full h-full fixed m-auto lg:invisible" id="coco-menu">    
               <ul class="w-4/6 text-black uppercase text-2xl mt-32 m-auto md:text-4xl">
-                  <li class="py-5 md:py-10 cursor-pointer transition duration-500 ease-in-out hover:text-red-600"><a href="index.html">Accueil</a></li>
-                  <li class="py-5 md:py-10 cursor-pointer transition duration-500 ease-in-out hover:text-red-600">Nos prestations</li>
-                  <li class="py-5 md:py-10 cursor-pointer transition duration-500 ease-in-out hover:text-red-600">Nos packs</li>
-                  <li class="py-5 md:py-10 cursor-pointer transition duration-500 ease-in-out hover:text-red-600">La méthode COCO</li>
+                  <li class="coco-lien-menu py-5 md:py-10 "><a href="index.html">Accueil</a></li>
+                  <li class="coco-lien-menu py-5 md:py-10 ">Nos prestations</li>
+                  <li class="coco-lien-menu py-5 md:py-10 ">Nos packs</li>
+                  <li class="coco-lien-menu py-5 md:py-10 ">La méthode COCO</li>
               </ul>
           </div>
           <div class="w-full flex pt-4 invisible lg:visible">    
-            <img src="img/logo/logo1.svg" class="w-40 absolute left-4 top-1 md:left-10 lg:visible" alt="logo Cocotier">
+            <img src="img/logo/logo1.svg" class="w-56 absolute left-4 top-1 md:left-20 lg:visible" alt="logo Cocotier">
             <ul class="w-6/6 flex absolute right-0 text-black uppercase text-xl">
-                <li class="pl-14 cursor-pointer transition duration-500 ease-in-out hover:text-red-600"><a href="index.html">Accueil</a></li>
-                <li class="pl-14 cursor-pointer transition duration-500 ease-in-out hover:text-red-600">Nos prestations</li>
-                <li class="pl-14 cursor-pointer transition duration-500 ease-in-out hover:text-red-600">Nos packs</li>
-                <li class="pl-14 pr-16 cursor-pointer transition duration-500 ease-in-out hover:text-red-600">La méthode COCO</li>
+                <li class="pl-14 coco-lien-menu"><a href="index.html">Accueil</a></li>
+                <li class="pl-14 coco-lien-menu">Nos prestations</li>
+                <li class="pl-14 coco-lien-menu">Nos packs</li>
+                <li class="pl-14 pr-16 coco-lien-menu">La méthode COCO</li>
             </ul>
         </div>
     </nav>
     
-    <header class="coco-header w-full h-72 md:h-96">
+    <header class="bg-coco w-full h-72 md:h-96">
         <div>
-            <img src="img/perso/1-1.svg" class="m-auto pt-9 w-80 md:w-96 md:pt-20 lg:float-left lg:ml-24 xl:ml-56" alt="Cocotier, agence communication à La Réunion">
+            <img src="img/perso/1.svg" class="coco-img-header m-auto w-80 pt-entre8et9 lg:pt-entre7et8 md:w-cocoillustration lg:float-left lg:ml-24 xl:ml-56" alt="Cocotier, agence communication à La Réunion">
         </div>
         <div class="hidden pt-10 lg:block w-5/12 text-white lg:text-5xl xl:text-6xl absolute mt-14 right-10">
-            <p class="coco-slogans-pc uppercase font-black anim-typewriter line-1">#Graphisme</p>
-            <p class="coco-slogans-pc uppercase font-black anim-typewriter line-1">#Création</p>
-            <p class="coco-slogans-pc uppercase font-black anim-typewriter line-1">#Motiondesign</p>
-            <p class="coco-slogans-pc uppercase font-black anim-typewriter line-1">#sitevitrine</p>
+            <p class="coco-slogans">#Graphisme</p>
+            <p class="coco-slogans">#Création</p>
+            <p class="coco-slogans">#Motiondesign</p>
+            <p class="coco-slogans">#sitevitrine</p>
         </div>
     </header>
 
-    <div class="pt-52 w-5/6 m-auto coco-txt-color md:w-11/12 md:flex md:pt-64 lg:pt-10 xl:w-9/12 xl:pt-0">
+    <div class="pt-52 w-5/6 m-auto text-coco md:w-11/12 md:flex md:pt-64 lg:pt-10 xl:w-9/12 xl:pt-0">
         <h3 class="uppercase text-3xl text-center pb-9 md:hidden">Vous avez une idée qui émerge ?</h3>
-        <img src="img/perso/2.svg" class="sm:mr-10 coco-img-projet" alt="Projet en communication">   
-        <div class="">
+        <img src="img/perso/2.svg" class="sm:mr-10 w-cocoillustration" alt="Projet en communication">   
+        <div>
             <h3 class="uppercase text-3xl pb-9 hidden md:block md:text-2xl md:pb-4 xl:text-3xl">Vous avez une idée qui émerge ?</h3>
             <p class="text-xl md:text-xl xl:text-xl">Un accompagnement en 3 étapes : </p>
             <ul class="text-xl md:text-xl xl:text-xl">
@@ -68,98 +68,107 @@
         </div>
     </div>
 
-    <h2 class="uppercase coco-h2-clip-path text-4xl pt-20 text-center coco-txt-color relative z-10 md:text-5xl">Nos prestations</h2>
+    <h2 class="coco-h2-clip-path coco-titre-h2">Nos prestations</h2>
 
     <div class="w-full py-24 coco-bloc-prestations coco-fond-plante relative text-white xl:pt-32">
-        <div class="flex flex-wrap justify-center ">
-            <div class="coco-card coco-color-identitevisuelle">
+        <div class="flex flex-wrap justify-center">
+            <div class="coco-card-prestation bg-identitevisuelle">
                 <img src="img/icones/identitevisuelle.png" class="m-auto" alt="Identité visuelle">
-                <h3 class="text-white text-2xl text-center p-5">Identité visuelle</h3>
-                <ul class="text-xl">
-                    <li>logo</li>
-                    <li>refonte logo</li>
-                    <li>charte graphique</li>
-                    <li>carte de visite</li>
-                    <li>mascotte</li>
-                    <li >papeterie</li>
-                </ul>
+                <h3 class="text-white text-2xl text-center p-5 uppercase">Identité visuelle</h3>
+                <p class="text-lg">
+                    Elle vous permet d’afficher une image professionnelle et de confiance, en corrélation avec l’esprit de votre entreprise.
+                </p>
+                <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
+                    <a class="coco-voir-tarifs hover:bg-identitevisuelle2" href="#">
+                        Voir tarifs
+                    </a>
+                </div>
             </div>
-            <div class="w-11/12 coco-h-card coco-color-print p-6 mb-12 md:w-80 md:p-10 md:mx-6 xl:w-72 uppercase cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <div class="coco-card-prestation bg-print">
                 <img src="img/icones/print.png" class="m-auto" alt="Print">
-                <h3 class="text-white text-2xl text-center p-5">Print</h3>
-                <ul class="text-xl">
-                    <li>flyer</li>
-                    <li>affiche</li>
-                    <li>plaquette</li>
-                    <li>catalogue</li>
-                    <li>kakemono</li>
-                    <li>invitation</li>
-                    <li>calendrier</li>
-                </ul>
+                <h3 class="text-white text-2xl text-center p-5 uppercase">Print</h3>
+                <p class="text-lg">
+                    Pour une communication réussie, exprimez-vous aux travers de divers supports physique et original.
+                </p>
+                <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
+                    <a class="coco-voir-tarifs hover:bg-print2" href="#">
+                        Voir tarifs
+                    </a>
+                </div>
             </div>
-            <div class="w-11/12 coco-h-card coco-color-web p-6 mb-12 md:w-80 md:p-10 md:mx-6 xl:w-72 uppercase cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <div class="coco-card-prestation bg-web">
                 <img src="img/icones/web.png" class="m-auto" alt="Web">
-                <h3 class="text-white text-2xl text-center p-5">Web</h3>
-                <ul class="text-xl">
-                    <li>webdesign</li>
-                    <li>site vitrine one page</li>
-                    <li>site vitrine multi-page</li>
-                    <li>mail pro</li>
-                    <li>réseaux sociaux</li>
-                    <li>bannière web</li>
-                </ul>
+                <h3 class="text-white text-2xl text-center p-5 uppercase">Web</h3>
+                <p class="text-lg">
+                    Présentez vos activités et savoir-faire en quelques clics, via un site vitrine.
+                </p>
+                <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
+                    <a class="coco-voir-tarifs hover:bg-web2" href="#">
+                        Voir tarifs
+                    </a>
+                </div>
             </div>
-            <div class="w-11/12 coco-h-card coco-color-video p-6 mb-12 md:w-80 md:mx-6 md:p-10 xl:w-72 uppercase cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <div class="coco-card-prestation bg-video">
                 <img src="img/icones/video.png" class="m-auto" alt="Vidéo et motion design">
-                <h3 class="text-white text-2xl text-center p-5">Vidéo</h3>
-                <ul class="text-xl">
-                    <li>Vidéo présentation</li>
-                    <li>motion design simple (20s à 1min30)</li>
-                    <li>motion design premium (20s à 1min30)</li>
-                </ul>
+                <h3 class="text-white text-2xl text-center p-5 uppercase">Vidéo</h3>
+                <p class="text-lg">
+                    Quoi de mieux qu’une courte vidéo animée pour présenter votre marque, vos produits ou vos services ? 
+                </p>
+                <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
+                    <a class="coco-voir-tarifs hover:bg-video2" href="#">
+                        Voir tarifs
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="flex flex-wrap justify-center ">
-            <div class="w-11/12 h-96 coco-h-card coco-color-important p-6 mb-12 md:w-80 md:mx-6 md:p-10 uppercase relative cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+        <div class="flex flex-wrap justify-center">
+            <div class="coco-card-pack bg-important">
                 <img src="img/icones/packidentite.png" class="m-auto" alt="Pack indentité">
-                <ul class="text-xl pt-5">
-                    <li>logo</li>
-                    <li>charte graphique</li>
-                    <li>papeterie</li>
-                </ul>
+                <p class="text-lg pt-3">
+                    Un pack complet et pensé pour une identité visuelle réussite. 
+                </p>
+                <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
+                    <a class="mt-3 text-lg text-center border-2 border-white w-full text-white rounded-lg px-6 py-3 hover:bg-important2" href="#">
+                        Voir tarifs
+                    </a>
+                </div>
                 <p class="text-sm text-center pt-10 lowercase absolute bottom-3 inset-x-0.5">*Tarifs réduits pour le pack indentité*</p>
             </div>
-            <div class="w-11/12 h-96 coco-h-card coco-color-important p-6 mb-12 md:w-80 md:mx-6 md:p-10 uppercase relative cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <div class="coco-card-pack bg-important">
                 <img src="img/icones/packweb.png" class="m-auto" alt="Pack web">
-                <ul class="text-xl pt-5">
-                    <li>site vitrine</li>
-                    <li>création réseaux sociaux</li>
-                    <li>hébergement site</li>
-                    <li>mail pro</li>
-                </ul>
+                <p class="text-lg pt-3">
+                    Un pack complet et pensé pour afficher sa présence sur le web.
+                </p>
+                <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
+                    <a class="coco-voir-tarifs hover:bg-important2" href="#">
+                        Voir tarifs
+                    </a>
+                </div>
                 <p class="text-sm text-center pt-10 lowercase absolute bottom-3 inset-x-0.5">*Tarifs réduits pour le pack web*</p>
             </div>
-            <div class="w-11/12 h-96 coco-h-card coco-color-important p-10 mb-12 md:w-80 md:p-10 uppercase relative cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <div class="coco-card-pack bg-important">
                 <img src="img/icones/packweb.png" class="m-auto" alt="Pack réséaux Facebook et Instagram">
-                <ul class="text-xl pt-5">
-                    <li>Création de votre page</li>
-                    <li>Habillage / Feed</li>
-                    <li>Publications mensuelles</li>
-                    <li>Gestion régie publicitaire</li>
-                </ul>
+                <p class="text-lg  pt-3">
+                    Un pack complet et pensé pour des réseaux sociaux pro.
+                </p>
+                <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
+                    <a class="coco-voir-tarifs hover:bg-important2" href="#">
+                        Voir tarifs
+                    </a>
+                </div>
                 <p class="text-sm text-center pt-10 lowercase absolute bottom-3 inset-x-0.5">*Tarifs variants en fonction du nombre de publications/mois*</p>
             </div>
         </div>
     </div>
 
     <div class="w-full m-auto relative">
-        <div class="pt-3 w-11/12 m-auto text-center relative z-9 coco-txt-color text-xl md:text-left md:w-9/12 md:text-2xl xl:w-6/12 xl:relative z-10 xl:float-left xl:ml-52 xl:pt-0 left-0">
+        <div class="pt-3 w-11/12 m-auto text-center relative z-9 text-coco text-xl md:text-left md:w-9/12 md:text-2xl xl:w-6/12 xl:relative z-10 xl:float-left xl:ml-52 xl:pt-0 left-0">
             <p>Si vous avez d’autres demandes spécifiques : impressions sur objet, calendrier, vectorisation de logo, signalétique, illustrations, ... </p>
             <p class="text-xl pt-10 md:text-left md:w-9/12 md:text-2xl">Vous pouvez aussi nous contacter ! <br /> Nous veillerons à vous apporter une solution personnalisé.</p>
             <p class="pb-10 text-lg md:text-xl">PS : Tarifs réduits pour les association à but non lucratif !</p>
             <div>
                 <a href="#">
-                    <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase coco-color-important m-auto md:text-center md:pt-7 md:text-4xl md:w-9/12 md:h-24 md:mt-10 lg:text-3xl lg:w-5/12 lg:h-16 lg:pt-4 lg:pt-0 lg:mt-0 lg:float-left transition duration-500 ease-in-out hover:bg-blue-600">Demander un devis</p>
+                    <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase bg-important m-auto md:text-center md:pt-7 md:text-4xl md:w-9/12 md:h-24 md:mt-10 lg:text-3xl lg:w-5/12 lg:h-16 lg:pt-4 lg:mt-0 lg:float-left transition duration-500 ease-in-out hover:bg-coco">Demander un devis</p>
                 </a>
                 <p class="text-lg md:text-center md:text-2xl lg:w-5/12">(En plus c’est gratuit !)</p>
             </div>
@@ -170,73 +179,163 @@
     </div>
 
     <div class="m-auto w-11/12 flex flex-wrap justify-center relative xl:pt-28 z-0">
-        <h2 class="w-full uppercase coco-h2-clip-path text-4xl pt-20 text-center coco-txt-color relative z-10 md:text-5xl lg:pt-10 lg:mt-8 lg:mb-10 lg:ml-56 lg:text-left">Nos réalisations</h2>
+        <h2 class="w-full coco-h2-clip-path coco-titre-h2 lg:pt-10 lg:mt-8 lg:mb-10 lg:ml-56 lg:text-left">Nos réalisations</h2>
         <img src="img/perso/3.svg" class="w-96 sm:w-8/12 pt-10 lg:hidden" alt="Nos réalisations">
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation1.png" alt="motion design sakifo">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation2.png" alt="print maquette livret">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation3.png" alt="visuel t-shirt">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation4.png" alt="affiches">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation5.png" alt="motion design presentation site CGSS Réunion">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation6.png" alt="signalétique covid">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation7.png" alt="logo association">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation8.png" alt="entretien réseaux sociaux">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation9.png" alt="création et entretien réseaux sociaux">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation10.png" alt="vectorisation logo">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation11.png" alt="motion design et visuel">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation12.png" alt="illustration">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation13.png" alt="illustration">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation14.png" alt="mise en page rapport">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation15.png" alt="t-shirt staff">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation16.png" alt="mise en page rappor d'activité">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation17.png" alt="illustation avatar">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
-        <div class="cursor-pointer mb-8 lg:mx-1 lg:mb-2">
+        <div class="carre-realisaion">
             <img src="img/realisation/realisation18.png" alt="print">
+            <div class="hover">
+                <div class="text text-8xl">
+                    +
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="pt-6 w-12/12 m-auto text-center relative coco-fond-plante2">
-        <p class="coco-txt-color pb-6 text-2xl uppercase md:text-3xl">On vous attend pour de nouvelles aventures !</p>
+        <p class="text-coco pb-6 text-2xl uppercase md:text-3xl">On vous attend pour de nouvelles aventures !</p>
         <a href="#" class="pt-10">
-            <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase coco-color-important m-auto md:text-center md:pt-7 md:text-4xl md:w-7/12 md:h-24 xl:text-3xl xl:w-3/12 xl:h-16 xl:pt-4 transition duration-500 ease-in-out hover:bg-blue-600">Parler de votre projet</p>
+            <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase bg-important m-auto md:text-center md:pt-7 md:text-4xl md:w-7/12 md:h-24 xl:text-3xl xl:w-3/12 xl:h-16 xl:pt-4 transition duration-500 ease-in-out hover:bg-coco">Parler de votre projet</p>
         </a>
-        <img src="img/perso/4.svg" class="w-96 pt-10 m-auto" alt="on vous attend">
+        <img src="img/perso/4.svg" class="w-cocoillustration pt-10 m-auto" alt="on vous attend">
     </div>
 
-    <footer class="text-white coco-color-footer">
+    <footer class="text-white bg-coco">
         <div class="w-10/12 pt-6 flex flex-wrap m-auto">
             <p class="w-9/12 text-2xl text-center m-auto">COCOTIER se tient disponible pour vous ! </p>
             <p class="w-10/12 text-2xl pt-5 m-auto text-center xl:pt-0">N’hésitez pas à nous contacter pour un devis gratuit.</p>

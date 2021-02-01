@@ -7,10 +7,41 @@
 @tailwind components;
 
 
-.coco-card {
-  height: 465px;
-  @apply p-6 mb-12 md:w-80 md:p-10 md:mx-6 xl:w-72 uppercase cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+/* Menu */
+.coco-lien-menu {
+  @apply cursor-pointer transition duration-500 ease-in-out hover:text-coco; 
 }
+
+/* Hashtag header */
+.coco-slogans {
+  font-family: system-ui;
+  @apply uppercase font-black anim-typewriter line-1; 
+}
+
+/* Titre h2*/ 
+.coco-titre-h2 {
+  font-family: 'Mouse Memoirs';
+  @apply uppercase text-4xl pt-20 text-center text-coco relative z-10 md:text-5xl; 
+}
+
+
+/* Card accueil */
+.coco-card-prestation {
+  height: 465px;
+  @apply w-11/12 p-6 mb-12 md:w-80 md:p-10 md:mx-6 xl:w-72 relative text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+}
+.coco-card-pack {
+  height: 465px;
+  @apply w-11/12 h-96 p-6 mb-12 md:w-80 md:mx-6 md:p-10 relative text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+}
+.coco-voir-tarifs {
+  @apply cursor-pointer mt-3 text-lg text-center border-2 border-white w-full text-white rounded-lg px-6 py-3; 
+}
+
+/* Carré réalisation */
+.carre-realisaion {
+  @apply cursor-pointer mb-8 lg:mx-1 lg:mb-2 relative; 
+} 
 
 
 @tailwind utilities;
@@ -19,15 +50,9 @@
 * {
     font-family: 'marvel';
 }
-h2 {
-    font-family: 'Mouse Memoirs';
-}
 
 .coco-placement {
     padding-top: 52px;
-}
-.coco-slogans-pc {
-    font-family: system-ui;
 }
 
 /* des ti-rets pour les listes */
@@ -38,15 +63,8 @@ li:before {
     content: ' ';
  }
 
- /* tailles de cards 
-.coco-h-card {
-    height: 465px;
-}*/
  
 /* illustration coco sur l'ordi */ 
-.coco-img-projet {
-  width: 30rem; ;
-}
 .coco-img-ordi {
   width: 51rem; ;
 }
@@ -183,38 +201,29 @@ li:before {
   }
 
 
-  .coco-header {
-    background-color: #3BB4CE;
+
+/* Overlay réalisation */ 
+  .carre-realisaion .text {
+    color: #fff; 
+    line-height: 1.5em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    }
+  .carre-realisaion .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
   }
-
-
-
-
-/* les couleurs des textes */
-.coco-txt-color {
-    color : #3BB4CE;
-}
-
-/* les couleurs prestations et boutons */
-.coco-color-identitevisuelle {
-    background-color: #F8B47E;
-}
-.coco-color-print {
-    background-color: #BBE0DD;
-}
-.coco-color-web {
-    background-color: #EF8963;
-}
-.coco-color-video {
-    background-color: #FFC907;
-}
-.coco-color-digitale {
-    background-color: #206771;
-}
-.coco-color-important {
-    background-color: #E9464E;
-}
-.coco-color-footer {
-    background-color: #0FB4B7;
-}
- 
+  .carre-realisaion:hover .hover {
+    opacity: 1;
+  }
+  .carre-realisaion .hover {
+    background-color: rgba(59, 180, 206, 0.5);
+  }
