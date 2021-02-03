@@ -28,11 +28,11 @@
 /* Card accueil */
 .coco-card-prestation {
   height: 465px;
-  @apply w-11/12 p-6 mb-12 md:w-80 md:p-10 md:mx-6 xl:w-72 relative text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+  @apply w-11/12 p-6 mb-12 md:w-80 md:p-10 md:mx-6 xl:w-72 relative text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:shadow-lg;
 }
 .coco-card-pack {
   height: 465px;
-  @apply w-11/12 h-96 p-6 mb-12 md:w-80 md:mx-6 md:p-10 relative text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+  @apply w-11/12 h-96 p-6 mb-12 md:w-80 md:mx-6 md:p-10 relative text-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:shadow-lg;
 }
 .coco-voir-tarifs {
   @apply cursor-pointer mt-3 text-lg text-center border-2 border-white w-full text-white rounded-lg px-6 py-3; 
@@ -43,6 +43,11 @@
   @apply cursor-pointer mb-8 lg:mx-1 lg:mb-2 relative; 
 } 
 
+/* Prestation et pack */
+.coco-prix {
+  font-family: 'Mouse Memoirs';
+  @apply text-7xl text-coco uppercase pt-3 pb-4;
+}
 
 @tailwind utilities;
 
@@ -59,7 +64,7 @@
 li:before {
     content: '- ';
  }
- nav li:before {
+ nav li:before, .coco-card-prestation li:before{
     content: ' ';
  }
 
@@ -82,7 +87,8 @@ li:before {
     background-size: cover;
     background-position-x: center;
 }
- 
+
+
 /* Animation */
 .line-1{
     white-space: nowrap;
@@ -127,6 +133,13 @@ li:before {
     bottom: -105px;
     clip-path: ellipse(60% 38% at 50% 46%);
   }
+  .coco-bloc-prestations-identitevisuelle:before {
+    content:'';
+    height:180px;
+    top: -105px;
+    clip-path: ellipse(60% 38% at 50% 46%);
+    @apply bg-white absolute block w-full;
+  }
   /* XL */ 
     @media only screen and (min-width : 1023px) {
         .coco-bloc-prestations:before {
@@ -149,8 +162,16 @@ li:before {
             bottom: -105px;
             clip-path: ellipse(59% 83% at 50% 85%);
           }
+          .coco-bloc-prestations-identitevisuelle:before {
+            content:'';
+            height:180px;
+            top: -105px;
+            clip-path: ellipse(58% 80% at 50% 20%);
+            @apply bg-white absolute block w-full;
+          }
     }
   
+
 
 
 /* menu smartphone tablette */ 
