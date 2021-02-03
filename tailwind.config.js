@@ -34,6 +34,7 @@ module.exports = {
       digitale:'#206771',
       important:'#E9464E',
       important2: '#CE343C',
+      important3: '#FB6B72',
       identitevisuelle2: '#F9A766',
       print2: '#A2D7D2',
       web2:'#ED784D',

@@ -64,7 +64,7 @@
 li:before {
     content: '- ';
  }
- nav li:before, .coco-card-prestation li:before{
+ nav li:before, .coco-card-prestation li:before, .coco-card-pack li:before {
     content: ' ';
  }
 
@@ -133,7 +133,7 @@ li:before {
     bottom: -105px;
     clip-path: ellipse(60% 38% at 50% 46%);
   }
-  .coco-bloc-prestations-identitevisuelle:before {
+  .coco-bloc-prestations-identitevisuelle:before, .coco-bloc-pack-identitevisuelle:before {
     content:'';
     height:180px;
     top: -105px;

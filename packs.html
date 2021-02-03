@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="/dist/tailwind.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <!-- Our project just needs Font Awesome solid + brand -->
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <title>Cocotier - Agence digitale à La Réunion</title>
+    </head>
+<body>
+    <nav class="h-16">
+        <img src="img/logo/logo1.svg" class="w-52 absolute z-30 left-4 top-1 md:left-10 lg:invisible" alt="logo Cocotier">
+        <svg class="ham hamRotate180 ham5 absolute z-30 right-2 lg:invisible" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+            <path
+                class="line top"
+                d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+            <path
+                class="line middle"
+                d="m 70,50 h -40" />
+            <path
+                class="line bottom"
+                d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+        </svg>
+        <div class="bg-white w-full h-full fixed m-auto lg:invisible" id="coco-menu">    
+            <ul class="w-4/6 text-black uppercase text-2xl mt-32 m-auto md:text-4xl">
+                <li class="coco-lien-menu py-5 md:py-10 "><a href="index.html">Accueil</a></li>
+                <li class="coco-lien-menu py-5 md:py-10 "><a href="prestations.html">Nos prestations</a></li>
+                <li class="coco-lien-menu py-5 md:py-10 "><a href="packs.html">Nos packs</a></li>
+                <li class="coco-lien-menu py-5 md:py-10"><a href="index.html#nosrealisations">Nos réalisations</a></li>
+                <li class="coco-lien-menu py-5 md:py-10 "><a href="methodecoco.html">La méthode COCO</a></li>
+            </ul>
+        </div>
+        <div class="w-full flex pt-4 invisible lg:visible">    
+          <img src="img/logo/logo1.svg" class="w-56 absolute left-4 top-1 md:left-20 lg:visible" alt="logo Cocotier">
+          <ul class="w-6/6 flex absolute right-0 text-black uppercase text-xl">
+              <li class="pl-14 coco-lien-menu"><a href="index.html">Accueil</a></li>
+              <li class="pl-14 coco-lien-menu"><a href="prestations.html">Nos prestations</a></li>
+              <li class="pl-14 coco-lien-menu"><a href="packs.html">Nos packs</a></li>
+              <li class="pl-14 coco-lien-menu"><a href="index.html#nosrealisations">Nos réalisations</a></li>
+              <li class="pl-14 pr-16 coco-lien-menu"><a href="methodecoco.html">La méthode COCO</a></li>
+          </ul>
+      </div>
+    </nav>
+    
+    <header class="bg-coco w-full h-72 md:h-96">
+        <div>
+            <img src="img/perso/7.svg" class="coco-img-header m-auto w-80 pt-9 lg:pt-10 md:w-cocoillustrationmethodecoco lg:float-left lg:ml-24 xl:ml-56" alt="Cocotier, agence communication à La Réunion">
+        </div>
+        <div class="hidden pt-10 lg:block w-5/12 text-white lg:text-5xl xl:text-6xl absolute mt-14 right-10">
+            <p class="coco-slogans">#packs</p>
+            <p class="coco-slogans">#multiservices</p>
+            <p class="coco-slogans">#tarifs</p>
+            <p class="coco-slogans">#devis</p>
+        </div>
+    </header>
+    <!-- contenu page -->
+
+    <div class="w-10/12 lg:w-7/12 xl:w-full pt-10 md:pt-16 lg:pt-0 pb-4 m-auto flex flex-col items-center text-center relative z-10">
+        <div>
+            <h2 class="coco-titre-h2 xl:pt-10">Nos packs</h2>
+            <p class="text-coco pb-10 text-xl pt-6 xl:w-8/12 m-auto">Des packs pensés et complets, incluant plusieurs services à tarifs réduits.</p>
+        </div>
+    </div>
+    
+    <!-- PACK identité -->
+    <div class="w-full pt-24 pb-12 coco-bloc-pack-identitevisuelle bg-important relative text-white xl:pt-32">
+        <div class="flex flex-wrap justify-center" id="coco-bloc-pack-identitevisuelle">
+            <div class="w-10/12 text-center pb-8">
+                <img src="img/icones/packidentite.png" class="m-auto" alt="Pack identité visuelle">
+                <h3 class="text-white text-3xl text-center p-5 uppercase">Pack Identité</h3>
+                <p class="text-xl md:text-2xl xl:w-8/12 m-auto">
+                    Vous allez ou avez tout juste débuter dans votre activité et avez besoin d’une identité pour vous démarquer ? Ce pack est fait pour vous !
+                </p>
+            </div>
+            <div class="coco-card-prestation mb-0 bg-white lg:mr-0 lg:mb-10 xl:w-80">
+                <h3 class="text-coco text-center uppercase text-4xl">Pack identité</h3>
+                <p class="text-coco uppercase text-2xl">
+                    à partir de
+                </p>
+                <p class="coco-prix">999€</p>
+                <hr class="pb-5 border-t-2 border-coco">
+                <ul class="text-coco text-left text-xl">
+                    <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>Logo</li>
+                    <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>Charte graphique</li>
+                    <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>Carte de visite</li>
+                    <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>Signature électronique</li>
+                    <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>Dépliant / Mascotte</li>
+                </ul>
+            </div>
+            <div class="coco-card-pack w-10/12 bg-coco text-white transform-none shadow-none sm:w-7/12 lg:w-4/12 lg:m-0 lg:mt-10 ">
+                <p class="uppercase text-xl py-5 bg-gray-800 w-full absolute left-0 top-0">
+                    Bon à savoir
+                </p> 
+                <ul class="text-xl pt-12 divide-y-2">
+                    <li class="py-4 uppercase">X modification au total</li>
+                    <li class="py-4 uppercase">Tarifs réduits pour les packs</li>
+                    <li class="py-4 uppercase">Dépliant ou mascotte au choix</li>
+                </ul>
+            </div>
+
+            <div class="w-9/12">
+                <p class="text-2xl md:text-3xl text-center pb-5">Autres services supplémentaires :</p>
+                <div class="flex flex-col md:flex-row justify-around">
+                    <ul class="text-xl md:text-2xl">
+                        <li>Refonte logo</li>
+                        <li>Vectoristation logo</li>
+                        <li>Bannière réseaux sociaux</li>
+                        <li>Infographie</li>
+                        <li>Pochette à rabat</li>
+                    </ul>
+                    <ul class="text-xl md:text-2xl">
+                        <li>Invitation</li>
+                        <li>Calendrier</li>
+                        <li>Mise en page</li>
+                        <li>Signalétique</li>
+                        <li>Vitrine magasin</li>
+                    </ul>
+                    <ul class="text-xl md:text-2xl">
+                        <li>Menu</li>
+                        <li>Kakemono</li>
+                        <li>Dépliant 3 volets</li>
+                        <li>Plaquette</li>
+                    </ul>
+                </div>
+                <div class="text-center py-10">
+                    <a href="#">
+                        <p class="cursor-pointer pt-4 text-2xl text-coco w-11/12 h-16 uppercase bg-white m-auto md:text-center md:pt-7 md:text-4xl md:w-9/12 md:h-24 md:mt-10 lg:text-3xl lg:w-4/12 lg:h-16 lg:pt-4 lg:mt-0 transition duration-500 ease-in-out hover:bg-coco  hover:text-white">Demander un devis</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PACK web -->
+    <div class="w-full py-16 relative text-white bg-important2">
+        <div class="flex flex-wrap justify-center" id="coco-bloc-pack-web">
+            <div class="w-10/12 text-center pb-8">
+                <img src="img/icones/packweb.png" class="m-auto" alt="Pack identité visuelle">
+                <h3 class="text-white text-3xl text-center p-5 uppercase">Pack web</h3>
+                <p class="text-xl md:text-2xl xl:w-8/12 m-auto">
+                    Vous êtes prêt à montrer votre activité, présenter vos services et vous démarquer de la concurrence en quelques clic ? Ce pack est l’idéal !
+                </p>
+            </div>
+            <div class="coco-card-prestation mb-0 bg-white lg:mr-0 lg:mb-10 xl:w-80">
+                <h3 class="text-coco text-center uppercase text-4xl">Pack web</h3>
+                <p class="text-coco uppercase text-2xl">
+                    à partir de
+                </p>
+                <p class="coco-prix">1179€</p>
+                <hr class="pb-5 border-t-2 border-coco">
+                <ul class="text-coco text-left text-xl">
+                    <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>site vitrine</li>
+                    <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>mail pro</li>
+                    <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>formation base wordpress</li>
+                    <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>1 bannières web</li> 
+                </ul>
+            </div>
+            <div class="coco-card-pack w-10/12 bg-coco text-white transform-none shadow-none sm:w-7/12 lg:w-4/12 lg:m-0 lg:mt-10 ">
+                <p class="uppercase text-xl py-5 bg-gray-800 w-full absolute left-0 top-0">
+                    Bon à savoir
+                </p> 
+                <ul class="text-xl pt-12 divide-y-2">
+                    <li class="py-4 uppercase">mise en ligne, l’hébergement et le nom de domaine pour un an</li>
+                    <li class="py-4 uppercase">formulaire de contact inclus</li>
+                    <li class="py-4 uppercase">Possibilité d'ajouter d'autres options</li>
+                </ul>
+            </div>
+
+            <div class="w-9/12">
+                <p class="text-2xl md:text-3xl text-center pb-5">Autres services supplémentaires :</p>
+                <div class="flex flex-col md:flex-row justify-around">
+                    <ul class="text-xl md:text-2xl">
+                        <li>Bannière web</li>
+                        <li>Rédaction web</li>
+                        <li>Photos</li>
+                    </ul>
+                </div>
+                <div class="text-center py-10">
+                    <a href="#">
+                        <p class="cursor-pointer pt-4 text-2xl text-coco w-11/12 h-16 uppercase bg-white m-auto md:text-center md:pt-7 md:text-4xl md:w-9/12 md:h-24 md:mt-10 lg:text-3xl lg:w-4/12 lg:h-16 lg:pt-4 lg:mt-0 transition duration-500 ease-in-out hover:bg-coco  hover:text-white">Demander un devis</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PACK reseaux -->
+    <div class="w-full py-16 relative text-white bg-important3">
+        <div class="flex flex-wrap justify-center" id="coco-bloc-pack-reseaux">
+            <div class="w-10/12 text-center pb-8">
+                <img src="img/icones/packweb.png" class="m-auto" alt="Pack identité visuelle">
+                <h3 class="text-white text-3xl text-center p-5 uppercase">Pack réseaux</h3>
+                <p class="text-xl md:text-2xl xl:w-8/12 m-auto">
+                    Parfait pour afficher votre présence sur le net, c’est l’outil incontournable pour communiquer avec vos clients sur vos offres ou autres annonces importantes.
+                </p>
+            </div>
+            <div class="w-full flex flex-wrap justify-center">
+                <div class="coco-card-prestation mb-0 bg-white lg:mr-0 lg:mb-10 xl:w-80">
+                    <h3 class="text-coco text-center uppercase text-4xl">Pack FACEBOOK</h3>
+                    <p class="text-coco uppercase text-2xl">
+                        à partir de
+                    </p>
+                    <p class="coco-prix">430€<span class="text-3xl">/mois</span></p>
+                    <hr class="pb-5 border-t-2 border-coco">
+                    <ul class="text-coco text-left text-xl">
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>création de la page</li>
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>1 banniere facebook</li>
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>6 publications mensuelles</li>
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>Calendrier éditorial</li> 
+                    </ul>
+                </div>
+                <div class="coco-card-pack w-10/12 bg-coco text-white transform-none shadow-none sm:w-7/12 lg:w-4/12 lg:m-0 lg:mt-10 ">
+                    <p class="uppercase text-xl py-5 bg-gray-800 w-full absolute left-0 top-0">
+                        Bon à savoir
+                    </p> 
+                    <ul class="text-xl pt-12 divide-y-2">
+                        <li class="py-4 uppercase">conseils sur la gestion de la page</li>
+                        <li class="py-4 uppercase">Configuration de la page compris</li>
+                        <li class="py-4 uppercase">Ciblage et gestion de la publicité</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="w-full flex flex-wrap justify-center">
+                <div class="coco-card-prestation mb-0 bg-white lg:mr-0 lg:mb-10 xl:w-80">
+                    <h3 class="text-coco text-center uppercase text-4xl">Pack INSTAGRAM</h3>
+                    <p class="text-coco uppercase text-2xl">
+                        à partir de
+                    </p>
+                    <p class="coco-prix">430€<span class="text-3xl">/mois</span></p>
+                    <hr class="pb-5 border-t-2 border-coco">
+                    <ul class="text-coco text-left text-xl">
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>création de la page</li>
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>feed original</li>
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>6 publications mensuelles</li>
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>Calendrier éditorial</li> 
+                    </ul>
+                </div>
+                <div class="coco-card-pack w-10/12 bg-coco text-white transform-none shadow-none sm:w-7/12 lg:w-4/12 lg:m-0 lg:mt-10 ">
+                    <p class="uppercase text-xl py-5 bg-gray-800 w-full absolute left-0 top-0">
+                        Bon à savoir
+                    </p> 
+                    <ul class="text-xl pt-12 divide-y-2">
+                        <li class="py-4 uppercase">conseils sur la gestion de la page</li>
+                        <li class="py-4 uppercase">Configuration de la page compris</li>
+                        <li class="py-4 uppercase">Ciblage et gestion de la publicité</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="w-full flex flex-wrap justify-center">
+                <div class="coco-card-prestation mb-0 bg-white lg:mr-0 lg:mb-10 xl:w-80">
+                    <h3 class="text-coco text-center uppercase text-4xl">Pack duo</h3>
+                    <p class="text-coco uppercase text-2xl">
+                        à partir de
+                    </p>
+                    <p class="coco-prix">799€<span class="text-3xl">/mois</span></p>
+                    <hr class="pb-5 border-t-2 border-coco">
+                    <ul class="text-coco text-left text-xl">
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>création des pages</li>
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>HABILLAGE - FEED ORIGINAL</li>
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>6 publications mensuelles/pages</li>
+                        <li class="pb-4 uppercase"><i class="fas fa-check fill-current text-coco pr-2"></i>Calendrier éditorial</li> 
+                    </ul>
+                </div>
+                <div class="coco-card-pack w-10/12 bg-coco text-white transform-none shadow-none sm:w-7/12 lg:w-4/12 lg:m-0 lg:mt-10 ">
+                    <p class="uppercase text-xl py-5 bg-gray-800 w-full absolute left-0 top-0">
+                        Bon à savoir
+                    </p> 
+                    <ul class="text-xl pt-12 divide-y-2">
+                        <li class="py-4 uppercase">conseils sur la gestion des pages</li>
+                        <li class="py-4 uppercase">Configuration des pages comprise</li>
+                        <li class="py-4 uppercase">Ciblage et gestion des publicités</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <div class="w-9/12">
+                <p class="text-2xl md:text-3xl text-center pb-5">Autres services supplémentaires :</p>
+                <div class="flex flex-col md:flex-row justify-around">
+                    <ul class="text-xl md:text-2xl">
+                        <li>Bannière Facebook vidéo</li>
+                        <li>Bannière Facebook motion design</li>
+                        <li>Retouche photo</li>
+                    </ul>
+                </div>
+                <div class="text-center py-10">
+                    <a href="#">
+                        <p class="cursor-pointer pt-4 text-2xl text-coco w-11/12 h-16 uppercase bg-white m-auto md:text-center md:pt-7 md:text-4xl md:w-9/12 md:h-24 md:mt-10 lg:text-3xl lg:w-4/12 lg:h-16 lg:pt-4 lg:mt-0 transition duration-500 ease-in-out hover:bg-coco  hover:text-white">Demander un devis</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-20 text-coco text-xl w-9/12 lg:w-10/12 xl:w-8/12 m-auto text-center flex flex-col lg:flex-row lg:divide-x-2 lg:divide-y-0 justify-center divide-y-2 divide-coco">
+        <p class="py-8 xl:w-4/12 lg:px-8">
+            <i class="fas fa-calculator fa-2x pb-7"></i><br>
+            La durée, la complexités du graphisme ou l’ajout d’options influent sur le devis final. 
+        </p>
+        <p class="py-8 xl:w-4/12 lg:px-8">
+            <i class="fas fa-money-check fa-2x pb-7"></i><br>
+            Les tarifs affiché sont HT, TVA non applicable ! </p>
+        <p class="py-8 xl:w-4/12 lg:px-8">
+            <i class="fas fa-hand-holding-heart fa-2x pb-7"></i><br>
+            Vous bénéficiez d’une réduction si vous êtes une association à but non lucratif.
+        </p>
+    </div>
+
+
+    <!-- contenu page fin-->
+    <footer class="text-white bg-coco">
+        <div class="w-10/12 pt-6 flex flex-wrap m-auto">
+            <p class="w-9/12 text-2xl text-center m-auto">COCOTIER se tient disponible pour vous ! </p>
+            <p class="w-10/12 text-2xl pt-5 m-auto text-center xl:pt-0">N’hésitez pas à nous contacter pour un devis gratuit.</p>
+            <div class="w-8/12 pt-16 m-auto flex flex-col md:w-4/12 xl:pt-1">
+                <h3 class="text-3xl uppercase">Nous suivre</h3>
+                <div class="flex space-x-4 pt-6"> 
+                    <img src="img/icones/linkedin.svg" class="w-11 cursor-pointer" alt="LinkedIn">
+                    <img src="img/icones/instagram.svg" class="w-11 cursor-pointer" alt="Instagram">
+                    <img src="img/icones/facebook.svg" class="w-11 cursor-pointer" alt="Facebook">
+                </div>
+            </div>
+            <div class="w-8/12 pt-10 m-auto md:w-4/12 xl:pt-1">
+                <h3 class="text-3xl uppercase pt-16">Nous contacter</h3>
+                <p class="text-2xl pt-6">0692 36 66 93</p>
+                <p class="text-2xl cursor-pointer transition duration-500 ease-in-out hover:text-blue-600">cocotier@gmail.com</p>
+                <p class="text-2xl">La Réunion</p>
+            </div>
+            <div class="pt-10 m-auto xl:pt-1">
+                <img src="img/logo/cocotierlogo.svg" class="w-64" alt="cocotier logo">
+            </div>
+            <div class="md:w-full">
+                <p class="text-4xl uppercase text-center pt-16">#protégez-vous</p>
+                <p class="w-9/12 text-xl m-auto text-center md:w-12/12">Île de La Réunion - Site réalisé par COCOTIER 2020 - <a href="" class="cursor-pointer">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $( "#coco-burger-menu" ).click(function() {
+          $( "#coco-menu" ).toggle();
+          $( "body" ).toggleClass('coco-overflow');
+        });
+    </script>
+</body>
+</html>
