@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="/dist/tailwind.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <!-- Our project just needs Font Awesome solid + brand -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <title>Cocotier - Agence digitale à La Réunion</title>
 </head>
 <body>
@@ -27,8 +29,7 @@
               <ul class="w-4/6 text-black uppercase text-2xl mt-32 m-auto md:text-4xl">
                   <li class="coco-lien-menu py-5 md:py-10 "><a href="index.html">Accueil</a></li>
                   <li class="coco-lien-menu py-5 md:py-10 "><a href="prestations.html">Nos prestations</a></li>
-                  <li class="coco-lien-menu py-5 md:py-10 "><a href="packs.html">Nos packs</a></li>
-                  <li class="coco-lien-menu py-5 md:py-10"><a href="index.html#nosrealisations">Nos réalisations</a></li>
+                  <li class="coco-lien-menu py-5 md:py-10 "><a href="packs.html">Nos packs</a></li> 
                   <li class="coco-lien-menu py-5 md:py-10 "><a href="methodecoco.html">La méthode COCO</a></li>
               </ul>
           </div>
@@ -75,7 +76,7 @@
     <div class="w-full py-24 coco-bloc-prestations coco-fond-plante relative text-white xl:pt-32">
         <div class="flex flex-wrap justify-center">
             <div class="coco-card-prestation bg-identitevisuelle">
-                <img src="img/icones/identitevisuelle.png" class="m-auto" alt="Identité visuelle">
+                <img src="img/icones/identitevisuelle.svg" class="m-auto w-24" alt="Identité visuelle">
                 <h3 class="text-white text-2xl text-center p-5 uppercase">Identité visuelle</h3>
                 <p class="text-lg">
                     Elle vous permet d’afficher une image professionnelle et de confiance, en corrélation avec l’esprit de votre entreprise.
@@ -87,7 +88,7 @@
                 </div>
             </div>
             <div class="coco-card-prestation bg-print">
-                <img src="img/icones/print.png" class="m-auto" alt="Print">
+                <img src="img/icones/print.svg" class="m-auto w-24" alt="Print">
                 <h3 class="text-white text-2xl text-center p-5 uppercase">Print</h3>
                 <p class="text-lg">
                     Pour une communication réussie, exprimez-vous aux travers de divers supports physique et original.
@@ -99,7 +100,7 @@
                 </div>
             </div>
             <div class="coco-card-prestation bg-web">
-                <img src="img/icones/web.png" class="m-auto" alt="Web">
+                <img src="img/icones/web.svg" class="m-auto w-24" alt="Web">
                 <h3 class="text-white text-2xl text-center p-5 uppercase">Web</h3>
                 <p class="text-lg">
                     Présentez vos activités et savoir-faire en quelques clics, via un site vitrine.
@@ -111,7 +112,7 @@
                 </div>
             </div>
             <div class="coco-card-prestation bg-video">
-                <img src="img/icones/video.png" class="m-auto" alt="Vidéo et motion design">
+                <img src="img/icones/video.svg" class="m-auto w-24" alt="Vidéo et motion design">
                 <h3 class="text-white text-2xl text-center p-5 uppercase">Vidéo</h3>
                 <p class="text-lg">
                     Quoi de mieux qu’une courte vidéo animée pour présenter votre marque, vos produits ou vos services ? 
@@ -125,7 +126,7 @@
         </div>
         <div class="flex flex-wrap justify-center">
             <div class="coco-card-pack bg-important">
-                <img src="img/icones/packidentite.png" class="m-auto" alt="Pack indentité">
+                <img src="img/icones/packidentite.svg" class="m-auto w-40" alt="Pack indentité">
                 <p class="text-lg pt-3">
                     Un pack complet et pensé pour une identité visuelle réussite. 
                 </p>
@@ -137,7 +138,7 @@
                 <p class="text-sm text-center pt-10 lowercase absolute bottom-3 inset-x-0.5">*Tarifs réduits pour le pack indentité*</p>
             </div>
             <div class="coco-card-pack bg-important">
-                <img src="img/icones/packweb.png" class="m-auto" alt="Pack web">
+                <img src="img/icones/packweb.svg" class="m-auto w-40" alt="Pack web">
                 <p class="text-lg pt-3">
                     Un pack complet et pensé pour afficher sa présence sur le web.
                 </p>
@@ -149,7 +150,7 @@
                 <p class="text-sm text-center pt-10 lowercase absolute bottom-3 inset-x-0.5">*Tarifs réduits pour le pack web*</p>
             </div>
             <div class="coco-card-pack bg-important">
-                <img src="img/icones/packweb.png" class="m-auto" alt="Pack réséaux Facebook et Instagram">
+                <img src="img/icones/packweb.svg" class="m-auto w-40" alt="Pack réséaux Facebook et Instagram">
                 <p class="text-lg  pt-3">
                     Un pack complet et pensé pour des réseaux sociaux pro.
                 </p>
@@ -346,15 +347,15 @@
             <div class="w-8/12 pt-16 m-auto flex flex-col md:w-4/12 xl:pt-1">
                 <h3 class="text-3xl uppercase">Nous suivre</h3>
                 <div class="flex space-x-4 pt-6"> 
-                    <img src="img/icones/linkedin.svg" class="w-11 cursor-pointer" alt="LinkedIn">
-                    <img src="img/icones/instagram.svg" class="w-11 cursor-pointer" alt="Instagram">
-                    <img src="img/icones/facebook.svg" class="w-11 cursor-pointer" alt="Facebook">
+                    <a href="#"><i class="fab fa-linkedin fa-3x text-white hover:text-video cursor-pointer"></i></a>
+                    <a href="#"></a><i class="fab fa-facebook-square fa-3x text-white  hover:text-video cursor-pointer"></i></a>
+                    <a href="#"></a><i class="fab fa-instagram-square fa-3x text-white hover:text-video cursor-pointer"></i></a>
                 </div>
             </div>
             <div class="w-8/12 pt-10 m-auto md:w-4/12 xl:pt-1">
                 <h3 class="text-3xl uppercase pt-16">Nous contacter</h3>
                 <p class="text-2xl pt-6">0692 36 66 93</p>
-                <p class="text-2xl cursor-pointer transition duration-500 ease-in-out hover:text-blue-600">cocotier@gmail.com</p>
+                <p class="text-2xl cursor-pointer transition duration-500 ease-in-out hover:text-video">cocotier@gmail.com</p>
                 <p class="text-2xl">La Réunion</p>
             </div>
             <div class="pt-10 m-auto xl:pt-1">
