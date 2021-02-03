@@ -28,6 +28,7 @@
                   <li class="coco-lien-menu py-5 md:py-10 "><a href="index.html">Accueil</a></li>
                   <li class="coco-lien-menu py-5 md:py-10 "><a href="prestations.html">Nos prestations</a></li>
                   <li class="coco-lien-menu py-5 md:py-10 ">Nos packs</li>
+                  <li class="pl-14 coco-lien-menu"><a href="index.html#nosrealisations">Nos réalisations</a></li>
                   <li class="coco-lien-menu py-5 md:py-10 "><a href="methodecoco.html">La méthode COCO</a></li>
               </ul>
           </div>
@@ -37,6 +38,7 @@
                 <li class="pl-14 coco-lien-menu"><a href="index.html">Accueil</a></li>
                 <li class="pl-14 coco-lien-menu"><a href="prestations.html">Nos prestations</a></li>
                 <li class="pl-14 coco-lien-menu">Nos packs</li>
+                <li class="pl-14 coco-lien-menu"><a href="index.html#nosrealisations">Nos réalisations</a></li>
                 <li class="pl-14 pr-16 coco-lien-menu"><a href="methodecoco.html">La méthode COCO</a></li>
             </ul>
         </div>
@@ -79,7 +81,7 @@
                     Elle vous permet d’afficher une image professionnelle et de confiance, en corrélation avec l’esprit de votre entreprise.
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
-                    <a class="coco-voir-tarifs hover:bg-identitevisuelle2" href="#">
+                    <a class="coco-voir-tarifs hover:bg-identitevisuelle2" href="prestations.html#coco-bloc-identitevisuelle">
                         Voir tarifs
                     </a>
                 </div>
@@ -91,7 +93,7 @@
                     Pour une communication réussie, exprimez-vous aux travers de divers supports physique et original.
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
-                    <a class="coco-voir-tarifs hover:bg-print2" href="#">
+                    <a class="coco-voir-tarifs hover:bg-print2" href="prestations.html#coco-bloc-print">
                         Voir tarifs
                     </a>
                 </div>
@@ -103,7 +105,7 @@
                     Présentez vos activités et savoir-faire en quelques clics, via un site vitrine.
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
-                    <a class="coco-voir-tarifs hover:bg-web2" href="#">
+                    <a class="coco-voir-tarifs hover:bg-web2" href="prestations.html#coco-bloc-web">
                         Voir tarifs
                     </a>
                 </div>
@@ -115,7 +117,7 @@
                     Quoi de mieux qu’une courte vidéo animée pour présenter votre marque, vos produits ou vos services ? 
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
-                    <a class="coco-voir-tarifs hover:bg-video2" href="#">
+                    <a class="coco-voir-tarifs hover:bg-video2" href="prestations.html#coco-bloc-video">
                         Voir tarifs
                     </a>
                 </div>
@@ -128,7 +130,7 @@
                     Un pack complet et pensé pour une identité visuelle réussite. 
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
-                    <a class="mt-3 text-lg text-center border-2 border-white w-full text-white rounded-lg px-6 py-3 hover:bg-important2" href="#">
+                    <a class="mt-3 text-lg text-center border-2 border-white w-full text-white rounded-lg px-6 py-3 hover:bg-important2" href="prestations.html#coco-bloc-packidentite">
                         Voir tarifs
                     </a>
                 </div>
@@ -140,7 +142,7 @@
                     Un pack complet et pensé pour afficher sa présence sur le web.
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
-                    <a class="coco-voir-tarifs hover:bg-important2" href="#">
+                    <a class="coco-voir-tarifs hover:bg-important2" href="prestations.html#coco-bloc-packweb">
                         Voir tarifs
                     </a>
                 </div>
@@ -152,7 +154,7 @@
                     Un pack complet et pensé pour des réseaux sociaux pro.
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
-                    <a class="coco-voir-tarifs hover:bg-important2" href="#">
+                    <a class="coco-voir-tarifs hover:bg-important2" href="prestations.html#coco-bloc-packreseau">
                         Voir tarifs
                     </a>
                 </div>
@@ -179,7 +181,7 @@
     </div>
 
     <div class="m-auto w-11/12 flex flex-wrap justify-center relative xl:pt-28 z-0">
-        <h2 class="w-full coco-h2-clip-path coco-titre-h2 lg:pt-10 lg:mt-8 lg:mb-10 lg:ml-56 lg:text-left">Nos réalisations</h2>
+        <h2 class="w-full coco-h2-clip-path coco-titre-h2 lg:pt-10 lg:mt-8 lg:mb-10 lg:ml-56 lg:text-left" id="nosrealisations">Nos réalisations</h2>
         <img src="img/perso/3.svg" class="w-96 sm:w-8/12 pt-10 lg:hidden" alt="Nos réalisations">
         <div class="carre-realisaion">
             <a href="realisation.html">
@@ -369,6 +371,24 @@
         $( "#coco-burger-menu" ).click(function() {
           $( "#coco-menu" ).toggle();
           $( "body" ).toggleClass('coco-overflow');
+        });
+
+        /**
+        * Smooth scrolling to page anchor on click
+        **/
+        $(function() {
+            $("a[href*='#']:not([href='#'])").click(function() {
+                if (
+                    location.hostname == this.hostname
+                    && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
+                ) {
+                    var anchor = $(this.hash);
+                    anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
+                    if ( anchor.length ) {
+                        $("html, body").animate( { scrollTop: anchor.offset().top }, 1500);
+                    }
+                }
+            });
         });
     </script>
 </body>
