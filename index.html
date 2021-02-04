@@ -12,8 +12,7 @@
 </head>
 <body>
 
-  <nav class="h-16 lg:bg-coco">
-        <img src="img/logo/logo2.svg" class="w-32 absolute left-4 top-1 md:left-10 lg:invisible" alt="logo Cocotier">
+  <nav class="h-16 bg-coco"> 
         <svg class="ham hamRotate180 ham5 absolute z-10 right-2 lg:invisible" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
             <path
                 class="line top"
@@ -25,7 +24,7 @@
                 class="line bottom"
                 d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
         </svg>
-          <div class="bg-white w-full h-full fixed m-auto lg:invisible" id="coco-menu">    
+          <div class="bg-coco w-full h-full fixed m-auto lg:invisible z-20" id="coco-menu">    
               <ul class="w-4/6 text-white uppercase text-2xl mt-32 m-auto md:text-4xl">
                   <li class="coco-lien-menu py-5 md:py-10 "><a href="index.html">Accueil</a></li>
                   <li class="coco-lien-menu py-5 md:py-10 "><a href="prestations.html">Nos prestations</a></li>
@@ -56,17 +55,20 @@
         </div>
     </header>
 
-    <div class="pt-52 w-5/6 m-auto text-coco md:w-11/12 md:flex md:pt-64 lg:pt-10 xl:w-9/12 xl:pt-0">
-        <h3 class="uppercase text-3xl text-center pb-9 md:hidden">Vous avez une idée qui émerge ?</h3>
-        <img src="img/perso/2.svg" class="sm:mr-10 w-cocoillustration" alt="Projet en communication">   
-        <div>
-            <h3 class="uppercase text-3xl pb-9 hidden md:block md:text-2xl md:pb-4 xl:text-3xl">Vous avez une idée qui émerge ?</h3>
-            <p class="text-xl md:text-xl xl:text-xl">Un accompagnement en 3 étapes : </p>
-            <ul class="text-xl md:text-xl xl:text-xl">
-                <li><strong class="uppercase font-normal">Analyse</strong>, nous échangeons ensemble sur vos besoins et les valeurs que vous souhaitez transmettre. Hop ! Un devis vous est proposé !  </li>
-                <li class="md:mt-4"><strong class="uppercase font-normal">Propositions</strong>, nous vous présentons des solutions qui répondent à votre demande.</li>
-                <li class="md:mt-4"><strong class="uppercase font-normal">Finalisation</strong>, nous terminons le projet en raccord avec la solution choisi par vos soins. Et assurons la livraison des fichiers entre vos mains.</li>
-            </ul>
+    <div class="pt-52 w-5/6 m-auto flex flex-wrap justify-center text-coco md:w-11/12 lg:w-full md:pt-64 lg:pt-0 xl:w-10/12 xl:pt-0">
+       <!--  <h3 class="uppercase text-3xl text-center pb-9 md:hidden">Vous avez une idée qui émerge ?</h3>-->
+        <img src="img/perso/2.svg" class="sm:mr-10 w-cocoillustration md:w-5/12 lg:w-cocoillustration" alt="Projet en communication">   
+        <div class="w-11/12 sm:pt-10 md:w-5/12 lg:w-6/12">
+            <h3 class="uppercase text-3xl py-2 md:block md:text-2xl md:pb-4 xl:text-4xl">Vous avez un projet qui émerge ?</h3>
+            <p class="text-2xl py-4">
+               <strong class="uppercase text-video">Print</strong>, <strong class="uppercase text-video">motion design</strong>, <strong class="uppercase text-video">community management</strong>, <strong class="uppercase text-video">site vitrine</strong>, nous vous proposons divers <strong class="text-video">services personnalisés</strong> et <strong class="text-video">adaptés à vos besoins</strong>.             
+            </p>
+            <p class="text-2xl py-4">         
+                Nous nous engageons à vous réaliser des <strong class="text-video2">solutions de qualités</strong>, suivi de conseils pour une <strong class="text-video2">communication cohérente et réussite</strong>. 
+            </p>
+            <p class="text-2xl py-4">
+                Bien plus qu’un service, un <strong class="text-video2">accompagnement</strong>.  
+            </p>
         </div>
     </div>
 
@@ -78,7 +80,7 @@
                 <img src="img/icones/identitevisuelle.svg" class="m-auto w-24" alt="Identité visuelle">
                 <h3 class="text-white text-2xl text-center p-5 uppercase">Identité visuelle</h3>
                 <p class="text-lg">
-                    Elle vous permet d’afficher une image professionnelle et de confiance, en corrélation avec l’esprit de votre entreprise.
+                    Affichez une image professionnelle et de confiance, en corrélation avec l’esprit de votre entreprise.
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
                     <a class="coco-voir-tarifs hover:bg-identitevisuelle2" href="prestations.html#coco-bloc-identitevisuelle">
@@ -90,7 +92,7 @@
                 <img src="img/icones/print.svg" class="m-auto w-24" alt="Print">
                 <h3 class="text-white text-2xl text-center p-5 uppercase">Print</h3>
                 <p class="text-lg">
-                    Pour une communication réussie, exprimez-vous aux travers de divers supports physique et original.
+                    Exprimez-vous aux travers de divers supports imprimés avec une mise en page séduisante.
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
                     <a class="coco-voir-tarifs hover:bg-print2" href="prestations.html#coco-bloc-print">
@@ -102,7 +104,7 @@
                 <img src="img/icones/web.svg" class="m-auto w-24" alt="Web">
                 <h3 class="text-white text-2xl text-center p-5 uppercase">Web</h3>
                 <p class="text-lg">
-                    Présentez vos activités et savoir-faire en quelques clics, via un site vitrine.
+                    Présentez vos activités et savoir-faire en quelques clics, via un site vitrine responsive et attractif.
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
                     <a class="coco-voir-tarifs hover:bg-web2" href="prestations.html#coco-bloc-web">
@@ -112,7 +114,7 @@
             </div>
             <div class="coco-card-prestation bg-video">
                 <img src="img/icones/video.svg" class="m-auto w-24" alt="Vidéo et motion design">
-                <h3 class="text-white text-2xl text-center p-5 uppercase">Vidéo</h3>
+                <h3 class="text-white text-2xl text-center p-5 uppercase">Motion design</h3>
                 <p class="text-lg">
                     Quoi de mieux qu’une courte vidéo animée pour présenter votre marque, vos produits ou vos services ? 
                 </p>
@@ -166,7 +168,7 @@
     <div class="w-full m-auto relative">
         <div class="pt-3 w-11/12 m-auto text-center relative z-9 text-coco text-xl md:text-left md:w-9/12 md:text-2xl xl:w-6/12 xl:relative z-10 xl:float-left xl:ml-52 xl:pt-0 left-0">
             <p>Si vous avez d’autres demandes spécifiques : impressions sur objet, calendrier, vectorisation de logo, signalétique, illustrations, ... </p>
-            <p class="text-xl pt-10 md:text-left md:w-9/12 md:text-2xl">Vous pouvez aussi nous contacter ! <br /> Nous veillerons à vous apporter une solution personnalisé.</p>
+            <p class="text-xl pt-10 md:text-left md:w-9/12 md:text-2xl">Vous pouvez aussi <strong class="text-video2">nous contacter</strong> ! <br /> Nous veillerons à vous apporter une solution personnalisé.</p>
             <p class="pb-10 text-lg md:text-xl">PS : Tarifs réduits pour les association à but non lucratif !</p>
             <div>
                 <a href="#">
@@ -332,7 +334,7 @@
     </div>
 
     <div class="pt-6 w-12/12 m-auto text-center relative coco-fond-plante2">
-        <p class="text-coco pb-6 text-2xl uppercase md:text-3xl">On vous attend pour de nouvelles aventures !</p>
+        <p class="text-coco pb-6 text-2xl uppercase md:text-3xl">On vous attend pour de <strong class="text-video2">nouvelles aventures</strong> !</p>
         <a href="#" class="pt-10">
             <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase bg-important m-auto md:text-center md:pt-7 md:text-4xl md:w-7/12 md:h-24 xl:text-3xl xl:w-3/12 xl:h-16 xl:pt-4 transition duration-500 ease-in-out hover:bg-coco">Parler de votre projet</p>
         </a>
