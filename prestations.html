@@ -11,9 +11,9 @@
         <title>Cocotier - Agence digitale à La Réunion</title>
     </head>
 <body>
-    <nav class="h-16 absolute top-0 right-0 w-full">
+    <nav class="coco-nav">
         <img src="img/logo/logo2.svg" class="w-32 absolute z-30 left-4 top-1 md:left-10 lg:invisible" alt="logo Cocotier">
-        <svg class="ham hamRotate180 ham5 absolute z-30 right-2 lg:invisible" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+        <svg class="ham hamRotate180 ham5 coco-burger" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
             <path
                 class="line top"
                 d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
@@ -61,14 +61,14 @@
     <div class="w-10/12 lg:w-7/12 xl:w-full pt-10 md:pt-16 lg:pt-0 pb-4 m-auto flex flex-col items-center text-center relative z-10">
         <div>
             <h2 class="coco-titre-h2 xl:py-0">Nos prestations</h2>
-            <p class="text-coco pb-10 text-xl pt-6 xl:w-8/12 m-auto">Divers services vous sont proposées, mais pas que ! Bénéficiez de conseils et d'un accompagnement personnalisé en fonction de vos besoins et de votre situation.</p>
+            <p class="text-coco pb-10 text-2xl pt-6 xl:w-8/12 m-auto">Divers services vous sont proposées, mais pas que ! Bénéficiez de conseils et d'un accompagnement personnalisé en fonction de vos besoins et de votre situation.</p>
         </div>
     </div>
 
     <!-- Identite visuelle -->
     <div class="w-full pt-24 pb-12 coco-bloc-prestations-identitevisuelle bg-identitevisuelle relative text-white xl:pt-32">
         <div class="flex flex-wrap justify-center" id="coco-bloc-identitevisuelle">
-            <div class="w-10/12 text-center pb-8">
+            <div class="w-full text-center pb-8">
                 <img src="img/icones/identitevisuelle.svg" class="m-auto w-24" alt="Identité visuelle">
                 <h3 class="text-white text-3xl text-center p-5 uppercase">Identité visuelle</h3>
                 <p class="text-xl md:text-2xl xl:w-6/12 m-auto">
@@ -128,7 +128,7 @@
                 </div>
                 <div class="text-center py-10">
                     <a href="#">
-                        <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase bg-important m-auto md:text-center md:pt-7 md:text-4xl md:w-9/12 md:h-24 md:mt-10 lg:text-3xl lg:w-4/12 lg:h-16 lg:pt-4 lg:mt-0 transition duration-500 ease-in-out hover:bg-coco">Demander un devis</p>
+                        <p class="coco-bouton-devis text-2xl text-white bg-important hover:bg-coco">Demander un devis</p>
                     </a>
                 </div>
             </div>
@@ -138,7 +138,7 @@
     <!-- Print -->
     <div class="w-full py-16 bg-print relative text-white">
         <div class="flex flex-wrap justify-center" id="coco-bloc-print">
-            <div class="w-10/12 text-center pb-8">
+            <div class="w-full text-center pb-8">
                 <img src="img/icones/print.svg" class="m-auto w-24" alt="Print">
                 <h3 class="text-white text-3xl text-center p-5 uppercase">Print</h3>
                 <p class="text-xl md:text-2xl xl:w-6/12 m-auto">
@@ -224,7 +224,7 @@
                 </div>
                 <div class="text-center py-10">
                     <a href="#">
-                        <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase bg-important m-auto md:text-center md:pt-7 md:text-4xl md:w-9/12 md:h-24 md:mt-10 lg:text-3xl lg:w-4/12 lg:h-16 lg:pt-4 lg:mt-0 transition duration-500 ease-in-out hover:bg-coco">Demander un devis</p>
+                        <p class="coco-bouton-devis text-2xl text-white bg-important hover:bg-coco">Demander un devis</p>
                     </a>
                 </div>
             </div>
@@ -234,7 +234,7 @@
      <!-- Web -->
      <div class="w-full py-16 bg-web relative text-white">
         <div class="flex flex-wrap justify-center" id="coco-bloc-web">
-            <div class="w-10/12 text-center pb-8">
+            <div class="w-full text-center pb-8">
                 <img src="img/icones/web.svg" class="m-auto w-24" alt="Print">
                 <h3 class="text-white text-3xl text-center p-5 uppercase">Web</h3>
                 <p class="text-xl md:text-2xl xl:w-6/12 m-auto">
@@ -298,7 +298,7 @@
                 </div>
                 <div class="text-center py-10">
                     <a href="#">
-                        <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase bg-important m-auto md:text-center md:pt-7 md:text-4xl md:w-9/12 md:h-24 md:mt-10 lg:text-3xl lg:w-4/12 lg:h-16 lg:pt-4 lg:mt-0 transition duration-500 ease-in-out hover:bg-coco">Demander un devis</p>
+                        <p class="coco-bouton-devis text-2xl text-white bg-important hover:bg-coco">Demander un devis</p>
                     </a>
                 </div>
             </div>
@@ -308,7 +308,7 @@
      <!-- Video -->
      <div class="w-full pt-16 coco-bloc-prestations-video bg-video relative text-white">
         <div class="flex flex-wrap justify-center" id="coco-bloc-video">
-            <div class="w-10/12 text-center pb-8">
+            <div class="w-full text-center pb-8">
                 <img src="img/icones/video.svg" class="m-auto w-24" alt="Print">
                 <h3 class="text-white text-3xl text-center p-5 uppercase">Motion design</h3>
                 <p class="text-xl md:text-2xl xl:w-6/12 m-auto">
@@ -367,7 +367,7 @@
                 </div>
                 <div class="text-center py-10">
                     <a href="#">
-                        <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase bg-important m-auto md:text-center md:pt-7 md:text-4xl md:w-9/12 md:h-24 md:mt-10 lg:text-3xl lg:w-4/12 lg:h-16 lg:pt-4 lg:mt-0 transition duration-500 ease-in-out hover:bg-coco">Demander un devis</p>
+                        <p class="coco-bouton-devis text-2xl text-white bg-important hover:bg-coco">Demander un devis</p>
                     </a>
                 </div>
             </div>

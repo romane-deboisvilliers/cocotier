@@ -12,8 +12,8 @@
 </head>
 <body>
 
-  <nav class="h-16 absolute top-0 right-0 w-full z-10"> 
-        <svg class="ham hamRotate180 ham5 absolute z-40 right-2 lg:invisible" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+  <nav class="coco-nav"> 
+        <svg class="ham hamRotate180 ham5 coco-burger" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
             <path
                 class="line top"
                 d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
@@ -74,7 +74,7 @@
 
     <h2 class="coco-h2-clip-path coco-titre-h2">Nos prestations</h2>
 
-    <div class="w-full py-24 coco-bloc-prestations coco-fond-plante relative text-white xl:pt-32">
+    <div class="w-full py-24 coco-bloc-prestations coco-fond-plante coco-fond relative text-white xl:pt-32">
         <div class="flex flex-wrap justify-center">
             <div class="coco-card-prestation bg-identitevisuelle">
                 <img src="img/icones/identitevisuelle.svg" class="m-auto w-24" alt="Identité visuelle">
@@ -132,11 +132,11 @@
                     Un pack complet et pensé pour une identité visuelle réussite. 
                 </p>
                 <div class="p-8 absolute bottom-7 -inset-x-2 uppercase">
-                    <a class="mt-3 text-lg text-center border-2 border-white w-full text-white rounded-lg px-6 py-3 hover:bg-important2" href="packs.html#coco-bloc-pack-identitevisuelle">
+                    <a class="coco-voir-tarifs " href="packs.html#coco-bloc-pack-identitevisuelle">
                         Voir tarifs
                     </a>
                 </div>
-                <p class="text-sm text-center pt-10 lowercase absolute bottom-3 inset-x-0.5">*Tarifs réduits pour le pack indentité*</p>
+                <p class="coco-card-phrase-asterix">*Tarifs réduits pour le pack indentité*</p>
             </div>
             <div class="coco-card-pack bg-important">
                 <img src="img/icones/packweb.svg" class="m-auto w-40" alt="Pack web">
@@ -148,7 +148,7 @@
                         Voir tarifs
                     </a>
                 </div>
-                <p class="text-sm text-center pt-10 lowercase absolute bottom-3 inset-x-0.5">*Tarifs réduits pour le pack web*</p>
+                <p class="coco-card-phrase-asterix">*Tarifs réduits pour le pack web*</p>
             </div>
             <div class="coco-card-pack bg-important">
                 <img src="img/icones/packweb.svg" class="m-auto w-40" alt="Pack réséaux Facebook et Instagram">
@@ -160,29 +160,29 @@
                         Voir tarifs
                     </a>
                 </div>
-                <p class="text-sm text-center pt-10 lowercase absolute bottom-3 inset-x-0.5">*Tarifs variants en fonction du nombre de publications/mois*</p>
+                <p class="coco-card-phrase-asterix">*Tarifs variants en fonction du nombre de publications/mois*</p>
             </div>
         </div>
     </div>
 
-    <div class="w-full m-auto relative">
-        <div class="pt-3 w-11/12 m-auto text-center relative z-9 text-coco text-xl md:text-left md:w-9/12 md:text-2xl xl:w-6/12 xl:relative z-10 xl:float-left xl:ml-52 xl:pt-0 left-0">
+    <div class="w-full 2xl:w-10/12  m-auto relative">
+        <div class="pt-3 w-11/12 m-auto text-center relative z-9 text-coco text-xl md:text-left md:w-9/12 md:text-2xl xl:w-6/12 z-10 xl:ml-52 xl:pt-0">
             <p>Si vous avez d’autres demandes spécifiques : impressions sur objet, calendrier, vectorisation de logo, signalétique, illustrations, ... </p>
             <p class="text-xl pt-10 md:text-left md:w-9/12 md:text-2xl">Vous pouvez aussi <strong class="text-video2">nous contacter</strong> ! <br /> Nous veillerons à vous apporter une solution personnalisé.</p>
             <p class="pb-10 text-lg md:text-xl">PS : Tarifs réduits pour les association à but non lucratif !</p>
-            <div>
+            <div class="absolute">
                 <a href="#">
-                    <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase bg-important m-auto md:text-center md:pt-7 md:text-4xl md:w-9/12 md:h-24 md:mt-10 lg:text-3xl lg:w-5/12 lg:h-16 lg:pt-4 lg:mt-0 lg:float-left transition duration-500 ease-in-out hover:bg-coco">Demander un devis</p>
+                    <p class="coco-bouton-devis text-3xl text-white bg-important coco-bouton-devis hover:bg-coco">Demander un devis</p>
                 </a>
-                <p class="text-lg md:text-center md:text-2xl lg:w-5/12">(En plus c’est gratuit !)</p>
+                <p class="text-lg md:text-center md:text-2xl lg:w-full">(En plus c’est gratuit !)</p>
             </div>
         </div>
-        <div class="hidden lg:block absolute right-10 -top-10 coco-img-ordi">
+        <div class="hidden lg:block absolute right-10 -top-10 w-cocoimgordi">
             <img src="img/perso/3.svg" alt="Nos réalisations">
         </div>
     </div>
 
-    <div class="m-auto w-11/12 flex flex-wrap justify-center relative xl:pt-28 z-0">
+    <div class="m-auto w-11/12 flex flex-wrap justify-center relative xl:pt-52 z-0">
         <h2 class="w-full coco-h2-clip-path coco-titre-h2 lg:pt-10 lg:mt-8 lg:mb-10 lg:ml-56 lg:text-left" id="nosrealisations">Nos réalisations</h2>
         <img src="img/perso/3.svg" class="w-96 sm:w-8/12 pt-10 lg:hidden" alt="Nos réalisations">
         <div class="carre-realisaion">
@@ -333,10 +333,10 @@
         </div>
     </div>
 
-    <div class="pt-6 w-12/12 m-auto text-center relative coco-fond-plante2">
+    <div class="pt-6 w-12/12 m-auto text-center relative coco-fond-plante2 coco-fond">
         <p class="text-coco pb-6 text-2xl uppercase md:text-3xl">On vous attend pour de <strong class="text-video2">nouvelles aventures</strong> !</p>
         <a href="#" class="pt-10">
-            <p class="cursor-pointer pt-4 text-2xl text-white w-11/12 h-16 uppercase bg-important m-auto md:text-center md:pt-7 md:text-4xl md:w-7/12 md:h-24 xl:text-3xl xl:w-3/12 xl:h-16 xl:pt-4 transition duration-500 ease-in-out hover:bg-coco">Parler de votre projet</p>
+            <p class="coco-bouton-devis pt-4 text-2xl text-white bg-important md:text-3xl md:w-96 md:h-16 md:pt-4 hover:bg-coco">Parler de votre projet</p>
         </a>
         <img src="img/perso/4.svg" class="w-cocoillustration pt-10 m-auto" alt="on vous attend">
     </div>

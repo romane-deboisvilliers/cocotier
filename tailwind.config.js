@@ -721,6 +721,7 @@ module.exports = {
       max: 'max-content',
       cocoillustration: '445px',
       cocoillustrationmethodecoco: '427px',
+      cocoimgordi: '51rem',
     }),
     zIndex: {
       auto: 'auto',

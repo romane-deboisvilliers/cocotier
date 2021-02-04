@@ -9,9 +9,9 @@
     <title>Cocotier - Agence digitale à La Réunion</title>
 </head>
 <body>
-    <nav class="h-16 absolute top-0 right-0 w-full">
+    <nav class="coco-nav">
         <img src="img/logo/logo2.svg" class="w-32 absolute z-30 left-4 top-1 md:left-10 lg:invisible" alt="logo Cocotier">
-        <svg class="ham hamRotate180 ham5 absolute z-30 right-2 lg:invisible" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+        <svg class="ham hamRotate180 ham5 coco-burger" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
             <path
                 class="line top"
                 d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
@@ -63,9 +63,11 @@
         </div>
         <div class="w-full flex flex-col items-center">
             <p class="text-coco pb-10 text-xl">Visuelle t-shirt personnalisé pour l'arrivé de bébé.</p>
-            <a href="index.html">
-                <p class="cursor-pointer pt-4 text-2xl text-white w-64 h-16 uppercase bg-gray-400 text-center transition duration-500 ease-in-out hover:bg-coco">Retour</p>
-            </a>
+            <div class="text-center py-10">
+                <a href="index.html#nosrealisations">
+                    <p class="coco-bouton-devis text-2xl text-white w-96 bg-gray-400 hover:bg-coco">Retour</p>
+                </a>
+            </div>
         </div>
     </div>
 

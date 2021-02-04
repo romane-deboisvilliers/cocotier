@@ -11,6 +11,12 @@
 .coco-lien-menu {
   @apply cursor-pointer transition duration-500 ease-in-out hover:text-video; 
 }
+.coco-nav {
+  @apply h-16 absolute top-0 right-0 w-full z-10; 
+}
+.coco-burger {
+  @apply absolute z-40 right-2 lg:invisible; 
+}
 
 /* Hashtag header */
 .coco-slogans {
@@ -37,6 +43,14 @@
 .coco-voir-tarifs {
   @apply cursor-pointer mt-3 text-lg text-center border-2 border-white w-full text-white rounded-lg px-6 py-3; 
 }
+.coco-card-phrase-asterix {
+  @apply text-sm text-center pt-10 lowercase absolute bottom-3 inset-x-0.5;
+}
+
+/* Bouton devis */
+.coco-bouton-devis {
+  @apply cursor-pointer pt-4 w-11/12 h-16 uppercase m-auto md:text-center md:text-3xl md:w-96 md:h-16 md:pt-4 transition duration-500 ease-in-out ;
+}
 
 /* Carré réalisation */
 .carre-realisaion {
@@ -56,10 +70,6 @@
     font-family: 'marvel';
 }
 
-.coco-placement {
-    padding-top: 52px;
-}
-
 /* des ti-rets pour les listes */
 li:before {
     content: '- ';
@@ -68,24 +78,15 @@ li:before {
     content: ' ';
  }
 
- 
-/* illustration coco sur l'ordi */ 
-.coco-img-ordi {
-  width: 51rem; ;
-}
-
 /* background illustration */ 
 .coco-fond-plante {
     background-image: url("../img/pc/fond.svg");
-    background-attachment: fixed; 
-    background-size: cover;
-    background-position-x: center;
 }
 .coco-fond-plante2 {
     background-image: url("../img/pc/fond2.svg");
-    background-attachment: fixed; 
-    background-size: cover;
-    background-position-x: center;
+}
+.coco-fond {
+  @apply bg-fixed bg-no-repeat bg-center bg-cover;
 }
 
 
@@ -208,7 +209,6 @@ li:before {
   }
   #coco-menu {
       display: none;
-      background-image:url('../img/pc/fond3.svg');
       background-position: center;
       background-size: cover;
   }
