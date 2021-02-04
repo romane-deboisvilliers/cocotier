@@ -12,8 +12,8 @@
 </head>
 <body>
 
-  <nav class="h-16 bg-coco"> 
-        <svg class="ham hamRotate180 ham5 absolute z-10 right-2 lg:invisible" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
+  <nav class="h-16 absolute top-0 right-0 w-full z-10"> 
+        <svg class="ham hamRotate180 ham5 absolute z-40 right-2 lg:invisible" id="coco-burger-menu" viewBox="0 0 100 100" width="70" onclick="this.classList.toggle('active')">
             <path
                 class="line top"
                 d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
@@ -43,11 +43,11 @@
         </div>
     </nav>
     
-    <header class="bg-coco w-full h-72 md:h-96">
+    <header class="bg-coco w-full h-72 md:h-96 lg:flex lg:justify-end">
         <div>
-            <img src="img/perso/1.svg" class="coco-img-header m-auto w-80 pt-entre8et9 lg:pt-entre7et8 md:w-cocoillustration lg:float-left lg:ml-24 xl:ml-56" alt="Cocotier, agence communication à La Réunion">
+            <img src="img/perso/1.svg" class="coco-img-header m-auto w-80 pt-entre8et9 lg:pt-entre7et8 lg:mr-48 md:w-cocoillustration" alt="Cocotier, agence communication à La Réunion">
         </div>
-        <div class="hidden pt-10 lg:block w-5/12 text-white lg:text-5xl xl:text-6xl absolute mt-14 right-10">
+        <div class="hidden pt-14 lg:block w-5/12 text-white lg:text-5xl xl:text-6xl mt-14">
             <p class="coco-slogans">#Graphisme</p>
             <p class="coco-slogans">#Création</p>
             <p class="coco-slogans">#Motiondesign</p>
@@ -55,9 +55,9 @@
         </div>
     </header>
 
-    <div class="pt-52 w-5/6 m-auto flex flex-wrap justify-center text-coco md:w-11/12 lg:w-full md:pt-64 lg:pt-0 xl:w-10/12 xl:pt-0">
+    <div class="pt-52 w-5/6 m-auto flex flex-wrap justify-center text-coco md:w-11/12 lg:w-full md:pt-64 lg:pt-48 xl:w-10/12">
        <!--  <h3 class="uppercase text-3xl text-center pb-9 md:hidden">Vous avez une idée qui émerge ?</h3>-->
-        <img src="img/perso/2.svg" class="sm:mr-10 w-cocoillustration md:w-5/12 lg:w-cocoillustration" alt="Projet en communication">   
+        <img src="img/perso/2.svg" class="sm:mr-10 w-cocoillustration md:w-5/12 lg:w-cocoillustration -z-1" alt="Projet en communication">   
         <div class="w-11/12 sm:pt-10 md:w-5/12 lg:w-6/12">
             <h3 class="uppercase text-3xl py-2 md:block md:text-2xl md:pb-4 xl:text-4xl">Vous avez un projet qui émerge ?</h3>
             <p class="text-2xl py-4">
