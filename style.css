@@ -1,6 +1,7 @@
 /* Police */ 
 @import url('https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 
 /* ./src/tailwind.css */
 @tailwind base;
@@ -20,7 +21,7 @@
 
 /* Hashtag header */
 .coco-slogans {
-  font-family: system-ui;
+  font-family: 'Raleway', sans-serif;
   @apply uppercase font-black anim-typewriter line-1; 
 }
 
